@@ -3,7 +3,6 @@ local platform = require('utils.platform')
 
 -- local font = 'Maple Mono SC NF'
 local font_family = 'Consolas'
--- local font_family = '更纱黑体 SX XLight'
 local font_size = 11
 
 return {
