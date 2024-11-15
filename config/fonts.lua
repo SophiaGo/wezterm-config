@@ -2,6 +2,7 @@ local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
 -- local font = 'Maple Mono SC NF'
+-- local font = 'JetBrains Mono'
 local font_family = 'Consolas'
 local font_size = 11
 
