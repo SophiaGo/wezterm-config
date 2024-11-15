@@ -1,5 +1,5 @@
 local gpu_adapters = require('utils.gpu_adapter')
--- local backdrops = require('utils.backdrops')
+local backdrops = require('utils.backdrops')
 local colors = require('colors.custom')
 
 return {
@@ -22,18 +22,18 @@ return {
     colors = colors,
 
     -- background
-    -- background = backdrops:create_opts(),
-    background = {
-      {
-        soucrce = { File = wezterm.config_dir .. '/backdrops/bulb-5258341_1920.jpg'}
-      },
-      {
-        source = { Color = color.background },
-        height = '100%',
-        width = '100%',
-        opacity = 0.80,
-      },
-    },
+    background = backdrops:create_opts(),
+    -- background = {
+    --   {
+    --     soucrce = { File = wezterm.config_dir .. '/bulb-5258341_1920.jpg'},
+    --   },
+    --   {
+    --     source = { Color = color.background },
+    --     height = '100%',
+    --     width = '100%',
+    --     opacity = 0.80,
+    --   },
+    -- },
 
     -- scrollbar
     enable_scroll_bar = true,
